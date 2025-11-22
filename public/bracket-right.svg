@@ -1,0 +1,12 @@
+<svg width="120" height="100" viewBox="0 0 120 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- L-shaped path: horizontal left from right, then curved corner, then vertical down -->
+  <path d="M 0 50 
+           L 100 50 
+           Q 110 50 110 60 
+           L 110 100" 
+        stroke="currentColor" 
+        stroke-width="3" 
+        fill="none" 
+        stroke-linecap="round"
+        stroke-linejoin="round"/>
+</svg>
