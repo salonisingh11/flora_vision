@@ -3,6 +3,26 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 ## Getting Started
 
 First, run the development server:
+Clone the Project 
+
+1️⃣ Open VS Code in an empty folder or choose a new location
+2️⃣ Copy your GitHub repository URL (HTTPS)
+
+Your repo URL:
+
+https://github.com/salonisingh11/flora_vision.git
+
+
+3️⃣ Run this command in the terminal:
+
+git clone https://github.com/salonisingh11/flora_vision.git
+
+
+✔️ This will download your full latest project from GitHub!
+
+▶️ Run the Project
+cd flora_vision
+npm install
 
 ```bash
 npm run dev
