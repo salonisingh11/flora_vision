@@ -8,7 +8,7 @@ Clone the Project
 1️⃣ Open VS Code in an empty folder or choose a new location
 2️⃣ Copy your GitHub repository URL (HTTPS)
 
-Your repo URL:
+  Your repo URL:
     ```bash
     https://github.com/salonisingh11/flora_vision.git
    ```
@@ -30,7 +30,7 @@ Your repo URL:
    pnpm dev
    # or
    bun dev
-   ```
+   
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
