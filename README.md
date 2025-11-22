@@ -9,18 +9,20 @@ Clone the Project
 2️⃣ Copy your GitHub repository URL (HTTPS)
 
 Your repo URL:
-
+```bash
 https://github.com/salonisingh11/flora_vision.git
 
 
 3️⃣ Run this command in the terminal:
 
+```bash
 git clone https://github.com/salonisingh11/flora_vision.git
 
 
 ✔️ This will download your full latest project from GitHub!
 
 ▶️ Run the Project
+```bash
 cd flora_vision
 npm install
 
