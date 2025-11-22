@@ -14,8 +14,7 @@ Clone the Project
    https://github.com/salonisingh11/flora_vision.git
    ```
 3️⃣ Run this command in the terminal:
-
-   ```bash
+    ```bash
     git clone https://github.com/salonisingh11/flora_vision.git
     ```
 ✔️ This will download your full latest project from GitHub!
