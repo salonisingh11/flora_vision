@@ -5,38 +5,36 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 First, run the development server:
 Clone the Project 
 
-1️⃣ Open VS Code in an empty folder or choose a new location
+1️. Open VS Code in an empty folder or choose a new location
 
-2️⃣ Copy your GitHub repository URL (HTTPS)
+2️. Copy your GitHub repository URL (HTTPS)
 
   Your repo URL:
   ```bash
    https://github.com/salonisingh11/flora_vision.git
    ```
-3️⃣ Run this command in the terminal:
+3️. Run this command in the terminal:
 
   ```bash
   git clone https://github.com/salonisingh11/flora_vision.git
   ```
     
-✔️ This will download your full latest project from GitHub!
 
-▶️ Run the Project
+## Run the Project in Dev ENV
   ```bash
    cd flora_vision
    npm install
-   npm run dev
-   # or
-   yarn dev
-   # or
-   pnpm dev
-   # or
-   bun dev
+   npm run dev 
+   ```
+## Run the Project in Production ENV
+  ```bash
+   cd flora_vision
+   npm install
+   npm run build
+   npm start
    ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
