@@ -45,23 +45,51 @@ const HeroBanner: React.FC = () => {
           {/* Right Content - Featured Product Card */}
           <div className="relative mt-8 lg:mt-0 lg:absolute lg:right-4 xl:right-8 2xl:right-16 lg:top-1/2 lg:-translate-y-1/2 w-full max-w-sm mx-auto lg:mx-0">
             <div 
-              className="relative bg-[rgba(26,32,26,0.05)] backdrop-blur-md overflow-visible shadow-sm w-full"
-              style={{ borderRadius: '32px', position: 'relative' }}
+              className="relative shadow-sm w-full"
+              style={{ 
+                position: 'relative',
+                backgroundColor: 'transparent 0.8',
+                overflow: 'visible'
+              }}
             >
-              {/* Wavy top edge */}
+              {/* Background SVG that matches the border shape exactly - prevents color leakage */}
               <svg
-                className="absolute top-0 left-0 w-full"
-                viewBox="0 0 320 40"
+                className="absolute inset-0 w-full h-full pointer-events-none"
+                viewBox="0 0 320 400"
                 preserveAspectRatio="none"
-                style={{ height: '40px', zIndex: 0 }}
+                style={{ zIndex: 0 }}
               >
                 <path
-                  d="M0,0 Q160,40 320,0 L320,40 L0,40 Z"
+                  d="M 32,0 
+                     Q 160,40 288,0
+                     Q 320,0 320,32
+                     L 320,368
+                     Q 320,400 288,400
+                     L 32,400
+                     Q 0,400 0,368
+                     L 0,32
+                     Q 0,0 32,0 Z"
                   fill="rgba(26,32,26,0.8)"
                 />
               </svg>
+              
+              {/* Backdrop blur layer - using same shape via CSS mask */}
+              <div 
+                className="absolute inset-0 pointer-events-none"
+                style={{ 
+                  backdropFilter: 'blur(12px)',
+                  WebkitBackdropFilter: 'blur(12px)',
+                  zIndex: 0,
+                  maskImage: 'url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 320 400\' preserveAspectRatio=\'none\'%3E%3Cpath d=\'M 32,0 Q 160,40 288,0 Q 320,0 320,32 L 320,368 Q 320,400 288,400 L 32,400 Q 0,400 0,368 L 0,32 Q 0,0 32,0 Z\' fill=\'%23000\'/%3E%3C/svg%3E")',
+                  WebkitMaskImage: 'url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 320 400\' preserveAspectRatio=\'none\'%3E%3Cpath d=\'M 32,0 Q 160,40 288,0 Q 320,0 320,32 L 320,368 Q 320,400 288,400 L 32,400 Q 0,400 0,368 L 0,32 Q 0,0 32,0 Z\' fill=\'%23000\'/%3E%3C/svg%3E")',
+                  maskSize: '100% 100%',
+                  WebkitMaskSize: '100% 100%',
+                  maskRepeat: 'no-repeat',
+                  WebkitMaskRepeat: 'no-repeat'
+                }}
+              />
 
-              {/* Border SVG that follows the wavy shape with smooth corners */}
+              {/* Border SVG with smooth corners */}
               <svg
                 className="absolute inset-0 w-full h-full pointer-events-none"
                 viewBox="0 0 320 400"
@@ -79,7 +107,7 @@ const HeroBanner: React.FC = () => {
                      L 0,32
                      Q 0,0 32,0 Z"
                   fill="none"
-                  stroke="rgba(255, 255, 255, 0.05)"
+                  stroke="rgba(190, 190, 190, 0.2)"
                   strokeWidth="1.25"
                   strokeLinecap="round"
                   strokeLinejoin="round"
@@ -103,7 +131,7 @@ const HeroBanner: React.FC = () => {
               
               <div className="px-4 sm:px-8 md:px-12 lg:px-16 pb-4 sm:pb-6 relative" style={{ zIndex: 3 }}>
                 <p className="text-sm sm:text-base text-white mb-1" style={{ fontFamily: 'var(--font-inter), Inter, sans-serif' }}>Indoor Plant</p>
-                <div className="flex items-center gap-4 sm:gap-8 md:gap-12 lg:gap-24 mb-4">
+                <div className="flex items-center gap-5 sm:gap-10 md:gap-15 lg:gap-20 mb-4">
                   <h3 className="text-lg sm:text-xl md:text-2xl text-white whitespace-nowrap" style={{ fontFamily: 'var(--font-inter), Inter, sans-serif' }}>Aglaonema plant</h3>
                   <Image
                     src="/arrow.png"
