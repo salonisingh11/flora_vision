@@ -253,7 +253,7 @@ export default function Home() {
                       fill
                       className="object-contain"
                       sizes="(max-width: 1024px) 100vw, 50vw"
-                      style={{ objectPosition: 'top left', margin: 0, padding: 0 }}
+                      style={{ objectPosition: 'top center', margin: 0, padding: 0 }}
                     />
                   </div>
                 </div>
