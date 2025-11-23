@@ -168,7 +168,7 @@ export default function Home() {
               price="Rs. 380/-"
             />
             <PlantCard
-              image="/Cactus.png"
+              image="/cactus.png"
               name="Cactus"
               description="It is known for their ability to thrive in arid environments"
               price="Rs. 259/-"
